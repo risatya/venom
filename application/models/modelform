@@ -1,0 +1,12 @@
+<?php
+class model_form extends CI_Model{
+	function getAll(){
+		$query=$this->db->query("select *from form");
+		return $query->result();
+	}
+  
+
+}
+
+
+?>

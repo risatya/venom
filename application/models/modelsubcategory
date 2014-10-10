@@ -1,0 +1,11 @@
+<?php
+class modelsubcategory extends CI_Model{
+	function getDataSubcategory(){
+		$query=$this->db->get('subcategory');
+		$data=$query->result();
+		return $data;
+	}
+	
+
+}
+?>
